@@ -4,6 +4,7 @@
     font-size: 18px;
     padding: 5px 0px 5px 15px;
     border-radius: 45px;
+    color: #d3d3d3;
 }
 
 .search:focus {

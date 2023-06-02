@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import "./search.css";
+const Search = ({ handleSearch }) => {
+  const [searchTerm, setSearchTerm] = useState("");
 
-function Search() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (searchTerm) {
-      navigate(`/search/${searchTerm}`);
-
-      setSearchTerm("");
-    }
+    handleSearch(searchTerm);
+    setSearchTerm("");
   };
+
   return (
     <header>
       <form id="form" onSubmit={handleSubmit}>
         <input
           type="text"
-          class="search"
+          className="search"
           id="search"
           placeholder="Search"
           value={searchTerm}
@@ -23,6 +23,6 @@ function Search() {
       </form>
     </header>
   );
-}
+};
 
 export default Search;
