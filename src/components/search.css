@@ -1,0 +1,17 @@
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary--color);
+    font-size: 18px;
+    padding: 5px 0px 5px 15px;
+    border-radius: 45px;
+}
+
+.search:focus {
+    transition: 0.2s all ease;
+    outline: none;
+    background-color: var(--primary--color);
+}
+
+.search::placeholder {
+    color: #7378c5;
+}

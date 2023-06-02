@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary--color: #22254b;
+  --secondary--color: #373b69;
+
+}
+
+body {
+  background-color: var(--secondary--color);
+  font-family: 'roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 150px;
+  background-color: #fff;
+}
+
+/* search section  */
+.search {
+  background-color: transparent;
+  border: 2px solid var(--primary--color);
+  font-size: 18px;
+  padding: 5px 0px 5px 15px;
+  border-radius: 45px;
+}
+
+.search:focus {
+  transition: 0.2s all ease;
+  outline: none;
+  background-color: var(--primary--color);
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+/* man section  */
+main {
+  background-color: var(--primary--color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* container section  */
+.movie {
+  cursor: pointer;
+  margin: 1rem;
+  width: 330px;
+  background-color: var(--secondary--color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie img {
+  width: 100%;
+}
+
+/* movie title section  */
+.movie-info {
+  border: none;
+  color: white;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+
+.movie-info span {
+  border: none;
+  background-color: var(--primary--color);
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.movie-info span.green {
+  color: rgb(13, 111, 13);
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.movie-info h3 {
+  margin-top: 0;
+}
+
+/* overview section  */
+.overview {
+  background-color: white;
+  padding: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(100%);
+  transition: 0.5s all ease-in-out;
+}
+
+.movie:hover .overview {
+  transform: translateY(0%);
+
+
+}
