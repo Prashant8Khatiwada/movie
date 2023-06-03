@@ -4,6 +4,7 @@
     font-size: 18px;
     padding: 5px 0px 5px 15px;
     border-radius: 45px;
+    width: 20vw;
     color: #d3d3d3;
 }
 
@@ -15,4 +16,11 @@
 
 .search::placeholder {
     color: #7378c5;
+}
+
+
+@media screen and (max-width:600px) {
+    .search {
+        width: 80%;
+    }
 }

@@ -17,10 +17,18 @@ body {
 }
 
 header {
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: flex-end;
-  padding-right: 150px;
+}
+
+
+/* ========== MEDIA QUERIES (SMALL DEVICES)========== */
+@media screen and (max-width:600px) {
+  header {
+    justify-content: flex-end;
+    padding: .5rem;
+  }
 }
 
 /* man section  */
