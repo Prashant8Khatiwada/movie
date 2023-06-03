@@ -1,0 +1,16 @@
+.paginate-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4a3699d3;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pagination {
+    background-color: transparent;
+    color: #d3d3d3;
+    font-weight: bolder;
+}

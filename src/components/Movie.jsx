@@ -2,6 +2,7 @@ import React from "react";
 
 const Movie = ({ movie, imgPath, getClassByVote }) => {
   const { id, title, poster_path, vote_average, overview } = movie;
+  // These id, title... are objects inside movie so they are destructured for ease of use
 
   return (
     <div className="movie" key={id}>
